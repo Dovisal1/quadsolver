@@ -14,7 +14,7 @@
 
 using namespace std;
 
-float promptUser(float &a, float &b, float &c) {
+void promptUser(float &a, float &b, float &c) {
     cout << "Enter values a, b, and c, of a qaudratic eqaution with the "
     << "form ax^2*bx+c" << endl;
     cout << "Enter all zeros to quit" << endl;
@@ -48,6 +48,8 @@ int main()
                 cout << "The roots are " << root1 << " and " << root2 << endl;
         else if (!isnan(root1) && !isnan(root2))
             cout << "Only one root: " << root1 << endl;
+	else if (!isnan(root1) && isnan(root2) || isnan(root1) && !isnan(root2))
+	    cout << "One imaginary root, and root is " << root1; 
         else
             cout << "Imaginary Roots!" << endl;
         

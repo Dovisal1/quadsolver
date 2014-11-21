@@ -14,8 +14,10 @@
 
 using namespace std;
 
-void promptUser(float &a, float &b, float &c) {
-    cout << "Enter values a, b, and c, of a qaudratic eqaution with the "
+void promptUser(float &a, float &b, float &c) 
+{    
+    cout << endl;
+    cout << "Enter values a, b, and c, of a qaudratic equation with the "
     << "form ax^2*bx+c" << endl;
     cout << "Enter all zeros to quit" << endl;
     
@@ -39,7 +41,10 @@ int main()
     
     promptUser(a,b,c);
 
-    while ( a!=0 || b!=0 ) {
+
+    //Program will continue to run until the user supplies an invalid 
+    //coefficient for the term 'a'.
+    while ( a!=0) {
 
         root1 = (-b + sqrt(pow(b,2) - 4 * a * c) ) / (2 * a);
 
@@ -54,6 +59,10 @@ int main()
             cout << "Imaginary Roots!" << endl;
         
         cout << endl;
+        
+        //The following feature will factor the equation using the root
+	//This will only be done if if the coefficient of the highest power
+	//is 1. For examply: x^2-x-2
 
         if (a==1 && root1 != root2 && !isnan(root1) && !isnan(root2)) {
 		
@@ -76,14 +85,13 @@ int main()
                 cout << "-" << root1 << ")(x+" << root2 * -1 << ")" << endl;
             else
                 cout << "-" << root2 << ")(x" << root1 * -1 << ")" << endl;
-            
-            cout << endl;
 
-        }//end beta if
+        }//end if
         
+	//function call
         promptUser(a,b,c);
 
     }//end while
     
-	return 0;
+    return 0;
 }

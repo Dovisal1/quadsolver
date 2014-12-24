@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <cmath>
 
 using namespace std;
@@ -16,7 +17,15 @@ int main(int argc, char* argv[])
     if(argc != 4)
         print_usage();
 
-    double a = atof(argv[1]), b = atof(argv[2]), c = atof(argv[3]), root1, root2;
+    double a = atof(argv[1]);
+    double b = atof(argv[2]);
+    double c = atof(argv[3]);
+    double root1, root2;
+
+    if( !a || !b || !c) {
+	    cerr << "quad: expecting numbers for all parameters\n";
+	    print_usage();
+    }
 
     root1 = (-b + sqrt(pow(b,2) - 4 * a * c) ) / (2 * a);
 

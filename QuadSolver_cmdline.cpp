@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
     double root1, root2;
 
     if( !a || !b || !c) {
-	    cerr << "quad: expecting numbers for all parameters\n";
+	    cerr << "quad: expecting all values to be numbers\n";
 	    print_usage();
     }
 

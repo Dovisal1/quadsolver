@@ -4,26 +4,23 @@
 
 using namespace std;
 
-void print_usage()
-{
-    cerr << "Usage: quad <a> <b> <c>" << endl;
-    exit(1);
-}
-
-
 int main(int argc, char* argv[])
 {
 
     if(argc != 4)
-        print_usage();
+    {
+        cerr << "Usage: " << argv[0] << " <a> <b> <c>\n";
+        exit(1);
+    }
 
     double a = atof(argv[1]);
     double b = atof(argv[2]);
     double c = atof(argv[3]);
     double root1, root2;
 
-    if( !a || !b || !c) {
-	    cerr << "quad: expecting all values to be numbers\n";
+    if(!a)
+    {
+	    cerr << argv[0] << ": invalid arguments\n";
 	    print_usage();
     }
 

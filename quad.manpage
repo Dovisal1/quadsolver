@@ -19,3 +19,5 @@ in a quadratic equation with the form
 The
 .B quad
 utility exits 0 on success, and 1 if an error occurs.
+.SH AUTHORS
+Dovi Salomon <Dovisal1@gmail.com>

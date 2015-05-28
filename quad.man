@@ -9,12 +9,12 @@ quadsolver -- solves the quadratic equation
 .SH DESCRIPTION
 Quadsolver is a quadratic equation solver. The
 .B quad
-utility accepts 3 arguments which respectively correspond to the constants
+utility accepts 3 arguments which respectively correspond to the coefficients
 .IR "a", 
 .IR "b",
 and
 .I c
-in a quadratic equation with the form
+of a quadratic equation with the form
 .I ax^2+bx+c.
 .SH EXIT STATUS
 The

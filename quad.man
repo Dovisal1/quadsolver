@@ -15,7 +15,8 @@ utility accepts 3 arguments which respectively correspond to the coefficients
 and
 .I c
 of a quadratic equation with the form
-.I ax^2+bx+c.
+.I ax^2+bx+c
+.
 .SH EXIT STATUS
 The
 .B quad

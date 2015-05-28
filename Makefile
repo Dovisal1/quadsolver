@@ -9,3 +9,7 @@ man:
 	cp quad.man quad.1
 	gzip quad.1
 	mv quad.1.gz /usr/local/share/man/man1/
+
+clean:
+	$(RM) /usr/local/bin/quad
+	$(RM) /usr/local/share/man/man1/quad.1.gz

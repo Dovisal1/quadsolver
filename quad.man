@@ -1,5 +1,6 @@
 ." Man page for quad
-.TH QUAD 1 "23 December 2014" "1.0" "User Commands"
+
+.TH QUAD 1 "28 May 2015" "1.1" "User Commands"
 .SH NAME
 quadsolver -- solves the quadratic equation
 .SH SYNOPSIS
@@ -18,6 +19,6 @@ in a quadratic equation with the form
 .SH EXIT STATUS
 The
 .B quad
-utility exits 0 on success, and 1 if an error occurs.
-.SH AUTHORS
+utility exits 0 on success, and >0 if an error occurs.
+.SH AUTHOR
 Dovi Salomon <Dovisal1@gmail.com>

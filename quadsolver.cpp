@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	
 	else
 	{
-		double root = (-b + sqrt(discriminant) ) / (2 * a);
+		double root = -b / (2 * a);
 		std::cout << "Only one root: " << root << '\n';
 	}
         

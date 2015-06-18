@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <cmath>
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 
     if(argc != 4)
@@ -22,17 +22,22 @@ int main(int argc, char **argv)
     }
 
     double discriminant = b*b - 4*a*c;
-    double root1 = (-b + sqrt(discriminant) ) / (2 * a);
-    double root2 = (-b - sqrt(discriminant) ) / (2 * a);
-
-    if (discriminant < 0)
+    
+	if (discriminant < 0)
     	std::cout << "Imaginary Roots!\n";
     	
     else if(discriminant > 0)
-        std::cout << "The roots are " << root1 << " and " << root2 << '\n';
-
-    else
-        std::cout << "Only one root: " << root1 << '\n';
-  
+	{
+	    double root1 = (-b + sqrt(discriminant) ) / (2 * a);
+	    double root2 = (-b - sqrt(discriminant) ) / (2 * a);
+		std::cout << "The roots are " << root1 << " and " << root2 << '\n';
+	}
+	
+	else
+	{
+		double root = (-b + sqrt(discriminant) ) / (2 * a);
+		std::cout << "Only one root: " << root << '\n';
+	}
+        
     return 0;
 }

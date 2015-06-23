@@ -2,7 +2,8 @@
 
 .TH QUAD 1 "28 May 2015" "1.1" "User Commands"
 .SH NAME
-quadsolver -- solves the quadratic equation
+.B quad
+-- solves the quadratic equation
 .SH SYNOPSIS
 .B quad
 .I a b c

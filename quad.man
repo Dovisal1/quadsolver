@@ -1,25 +1,26 @@
-." Man page for quad
-
-.TH QUAD 1 "28 May 2015" "1.1" "User Commands"
-.SH NAME
-.B quad
--- solves the quadratic equation
-.SH SYNOPSIS
-.B quad
-.I a b c
-.SH DESCRIPTION
-Quadsolver is a quadratic equation solver. The
-.B quad
-utility accepts 3 arguments which respectively correspond to the coefficients
-.IR "a", 
-.IR "b",
-and
-.I c
-of a quadratic equation with the form
-.I ax^2+bx+c.
-.SH EXIT STATUS
+.\" Man page for quad
+.Dd May 19, 2015
+.Dt QUAD 1
+.Os
+.Sh NAME
+.Nm quad
+.Nd solves the quadratic equation
+.Sh SYNOPSIS
+.Nm
+.Ar a b c
+.Sh DESCRIPTION
 The
-.B quad
+.Nm
+utility accepts 3 arguments which respectively correspond to the coefficients
+.Ar "a", 
+.Ar "b",
+and
+.Ar c
+of a quadratic equation with the form
+.Ar ax^2+bx+c.
+.Sh EXIT STATUS
+The
+.Nm
 utility exits 0 on success, and >0 if an error occurs.
-.SH AUTHOR
+.Sh AUTHOR
 Dovi Salomon <Dovisal1@gmail.com>
